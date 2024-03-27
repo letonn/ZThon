@@ -8,7 +8,7 @@ from .core.session import zedub
 from .utils import mybot, autoname, autovars, saves
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
 
-LOGS = logging.getLogger("Zelzal")
+LOGS = logging.getLogger("𝐋𝐈𝐓𝐇𝐎𝐍")
 cmdhr = Config.COMMAND_HAND_LER
 
 print(zira.__copyright__)
@@ -32,9 +32,9 @@ if not Config.ALIVE_NAME:
         LOGS.error(f"- {e}")
 
 try:
-    LOGS.info("⌭ بـدء تنزيـل زدثــون ⌭")
+    LOGS.info("⌭ بـدء تنزيـل ليثون ⌭")
     zedub.loop.run_until_complete(setup_bot())
-    LOGS.info("✓ تـم تنزيـل زدثــون .. بـنجـاح ✓")
+    LOGS.info("✓ تـم تنزيـل ليثون .. بـنجـاح ✓")
 except Exception as e:
     LOGS.error(f"{str(e)}")
     sys.exit()
@@ -63,7 +63,7 @@ async def startup_process():
     await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
-    LOGS.info(f"⌔ تـم تنصيـب زدثــون . . بنجـاح ✓ \n⌔ لـ إظهـار الاوامـر ارسـل (.الاوامر)")
+    LOGS.info(f"⌔ تـم تنصيـب ليثون . . بنجـاح ✓ \n⌔ لـ إظهـار الاوامـر ارسـل (.الاوامر)")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
