@@ -339,7 +339,7 @@ async def _(event):
 
 
 @zedub.zed_cmd(
-    pattern="الاشعارات (تفعيل|تعطيل)$",
+    pattern="(تفعيل|تعطيل)$ الاشعارات",
     command=("notify", plugin_category),
     info={
         "header": "To update the your chat after restart or reload .",
