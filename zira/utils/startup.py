@@ -95,7 +95,7 @@ async def autoname(): #Code by T.me/zzzzl1l
 
 async def setup_bot():
     """
-    To set up bot for zthon
+    To set up bot for A1DIIU
     """
     try:
         await zedub.connect()
@@ -163,7 +163,7 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @ZThon 🌐")
+            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @A1DIIU 🌐")
         except Exception as e:
             print(e)
 
@@ -180,7 +180,7 @@ async def startupmessage():
         if BOTLOG:
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/f821d27af168206b472ad.mp4",
+                "https://t.me/ydoydkgddyo/25",
                 caption="**•⎆┊تـم بـدء تشغـيل سـورس ليثون الخاص بك .. بنجاح 🧸♥️**",
                 buttons=[(Button.url("𝐋𝐈𝐓𝐇𝐎𝐍", "https://t.me/A1DIIU"),)],
             )
