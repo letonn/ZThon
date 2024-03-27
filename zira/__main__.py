@@ -8,7 +8,7 @@ from .core.session import zedub
 from .utils import mybot, autoname, autovars, saves
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
 
-LOGS = logging.getLogger("Zelzal")
+LOGS = logging.getLogger("LltHoN1")
 cmdhr = Config.COMMAND_HAND_LER
 
 print(zira.__copyright__)
