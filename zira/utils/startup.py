@@ -11,7 +11,6 @@ from pathlib import Path
 from random import randint
 from datetime import datetime as dt
 from pytz import timezone
-from zira.startup import *
 import requests
 import heroku3
 
