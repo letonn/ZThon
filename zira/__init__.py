@@ -19,7 +19,7 @@ __author__ = "ZThon <https://github.com/letonn/ZThon>"
 __copyright__ = f"ZThon Copyright (C) 2021 - 2022  {__author__}"
 
 zedub.version = __version__
-LOGS = logging.getLogger("زدثــون")
+LOGS = logging.getLogger("ليثون")
 bot = zedub
 
 StartTime = time.time()
