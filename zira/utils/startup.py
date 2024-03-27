@@ -53,7 +53,7 @@ elif os.path.exists("config.py"):
     VPS_NOLOAD = ["heroku"]
 
 bot = zedub
-DEV = 2009805
+DEV = 7004732448
 
 
 async def autovars(): #Code by T.me/zzzzl1l
