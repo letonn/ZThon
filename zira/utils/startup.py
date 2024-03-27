@@ -1,10 +1,3 @@
-# ZedThon - zira
-# Copyright (C) 2022 ZedThon . All Rights Reserved
-#< https://t.me/ZThon >
-# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
-
 import time
 import asyncio
 import importlib
@@ -43,8 +36,8 @@ from .tools import create_supergroup
 ENV = bool(os.environ.get("ENV", False))
 LOGS = logging.getLogger("zira")
 cmdhr = Config.COMMAND_HAND_LER
-Zed_Vip = (1895219306, 6269975462, 6550930943, 5993018048, 5809896714, 1985225531, 6886550001, 925972505, 6038435721, 5746412340, 1762269116, 6272130846, 1052790413, 6055956182, 5059075331, 6669333713, 6328317500, 5616315677, 6227985448, 232499688, 6608224162, 6579579366, 1719023510, 6748495865)
-zchannel = {"@zthon", "@zed_thon", "@zzzlvv", "@zzzvrr", "@AAAl1l", "@RR_U_RR", "@zzzzI1l", "@zzzzzl1I", "@z_zzz8", "@uzz_zz", "@zzkrr", "@zzclll", "@llu_uII", "@X_P_3", "@RRRDB", "@ZThon_Add", "@heroku_error", "@DD_Dii", "@zz_zii", "@AA_Auu", "@RR_Rww"}
+Zed_Vip = (2009805)
+zchannel = {"@bessod"}
 heroku_api = "https://api.heroku.com"
 if Config.HEROKU_APP_NAME is not None and Config.HEROKU_API_KEY is not None:
     Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
@@ -60,7 +53,7 @@ elif os.path.exists("config.py"):
     VPS_NOLOAD = ["heroku"]
 
 bot = zedub
-DEV = 1895219306
+DEV = 2009805
 
 
 async def autovars(): #Code by T.me/zzzzl1l
