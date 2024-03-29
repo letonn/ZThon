@@ -26,6 +26,7 @@ if Config.ZELZAL_A:
         if gvarstatus("GRPLOG") and gvarstatus("GRPLOG") != "false":
             delgvar("GRPLOG")
         try:
+        	
             entity = await zedub.get_input_entity(Config.ZELZAL_A)
             if isinstance(entity, InputPeerChannel):
                 full_info = await zedub(functions.channels.GetFullChannelRequest(
