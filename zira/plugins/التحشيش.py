@@ -14,7 +14,7 @@ from . import BOTLOG, BOTLOG_CHATID
 plugin_category = "الادوات"
 LOGS = logging.getLogger(__name__)
 zed_dev = (7004732448,2009805)
-
+zel_dev = (7004732448, 2009805)
 async def ge(user, event):
     if isinstance(user, str):
         user = int(user)
