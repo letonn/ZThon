@@ -106,8 +106,10 @@ ZelzalVP_cmd = (
 async def variable(event):
     input_str = event.pattern_match.group(1)
     reply = await event.get_reply_message()
-    vinfo = reply.text
-    zed = await edit_or_reply(event, "**⎉╎جـاري اضـافة الفـار الـى بـوتك ...**")
+    
+    if reply and reply.text:
+        vinfo = reply.text
+        zed = await edit_or_reply(event, "⎉╎جـاري اضـافة الفـار الـى بـوتك ...")
     # All Rights Reserved for "Zed-Thon" "زلـزال الهيبـه"
     if input_str == "كليشة الفحص" or input_str == "كليشه الفحص":
         variable = "ALIVE_TEMPLATE"
