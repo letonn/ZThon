@@ -29,7 +29,7 @@ plugin_category = "البوت"
 LOGS = logging.getLogger(__name__)
 
 ZED_BLACKLIST = [
-    -1002047211177,
+    -1002137527137,
     ]
 
 DEVZ = [
