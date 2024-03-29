@@ -259,7 +259,7 @@ async def variable(event):
             addgvar(variable, vinfo)
             await zed.edit("**⎉╎تم اضافـة {} بنجـاح ☑️**\n**⎉╎اليـوزرات المضـافة** \n {} \n\n**⎉╎الان قـم بـ ارسـال الامـر ↶** `.زاجل` **بالـرد ع نـص او ميديـا بنـص . .**".format(input_str, vinfo))
         else:
-            addgvar(variable, vinfo)
+           addgvar(variable, vinfo)
             await zed.edit("**⎉╎تم اضافـة {} بنجـاح ☑️**\n**⎉╎اليـوزرات المضـافة** \n {} \n\n**⎉╎الان قـم بـ ارسـال الامـر ↶** `.زاجل` **بالـرد ع نـص او ميديـا بنـص . .**".format(input_str, vinfo))
     elif input_str == "سوبر" or input_str == "قائمة السوبر" or input_str == "قائمه السوبر" or input_str == "السوبرات" or input_str == "السوبر":
         variable = "Super_Id"
