@@ -110,7 +110,7 @@ async def variable(event):
     if reply and reply.text:
         vinfo = reply.text
         zed = await edit_or_reply(event, "⎉╎جـاري اضـافة الفـار الـى بـوتك ...")
-
+    # All Rights Reserved for "Zed-Thon" "زلـزال الهيبـه"
     if input_str == "كليشة الفحص" or input_str == "كليشه الفحص":
         variable = "ALIVE_TEMPLATE"
         await asyncio.sleep(1.5)
@@ -256,6 +256,9 @@ async def variable(event):
         variable = "ZAGL_Zed"
         await asyncio.sleep(1.5)
         if gvarstatus("ZAGL_Zed") is None:
+            addgvar(variable, vinfo)
+            await zed.edit("**⎉╎تم اضافـة {} بنجـاح ☑️**\n**⎉╎اليـوزرات المضـافة** \n {} \n\n**⎉╎الان قـم بـ ارسـال الامـر ↶** `.زاجل` **بالـرد ع نـص او ميديـا بنـص . .**".format(input_str, vinfo))
+        else:
             addgvar(variable, vinfo)
             await zed.edit("**⎉╎تم اضافـة {} بنجـاح ☑️**\n**⎉╎اليـوزرات المضـافة** \n {} \n\n**⎉╎الان قـم بـ ارسـال الامـر ↶** `.زاجل` **بالـرد ع نـص او ميديـا بنـص . .**".format(input_str, vinfo))
     elif input_str == "سوبر" or input_str == "قائمة السوبر" or input_str == "قائمه السوبر" or input_str == "السوبرات" or input_str == "السوبر":
