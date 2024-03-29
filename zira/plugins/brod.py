@@ -269,7 +269,7 @@ async def malath(event):
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
     elif event.is_reply:
-        letonn = await event.get_reply_message()
+        zilzal = await event.get_reply_message()
     else:
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
@@ -292,9 +292,9 @@ async def malath(event):
         if str(username) == "None":
             idofuser = usr.id
             magtxt = f"{idofuser}"
-        if letonn.text:
+        if zilzal.text:
             try:
-                await borg.send_message(magtxt, letonn, link_preview=False)
+                await borg.send_message(magtxt, zilzal, link_preview=False)
                 success += 1
             except BaseException:
                 return
@@ -302,8 +302,8 @@ async def malath(event):
             try:
                 await borg.send_file(
                     magtxt,
-                    letonn,
-                    caption=letonn.caption,
+                    zilzal,
+                    caption=zilzal.caption,
                     link_preview=False,
                 )
                 success += 1
@@ -336,7 +336,7 @@ async def malath(event):
     if zedthon:
         await edit_or_reply(event, "**⎉╎بالـࢪد ؏ــلى ࢪسـالة او وسائـط**")
         return
-    letonn = await event.get_reply_message()
+    zilzal = await event.get_reply_message()
     if gvarstatus("ZAGL_Zed") is None:
         return await event.edit(ZELZAL_PRO_DEV, link_preview=False)
     zelzal = gvarstatus("ZAGL_Zed")
@@ -347,23 +347,23 @@ async def malath(event):
     user_entity = None
     for user in users:
         total += 1
-        if letonn.text:
+        if zilzal.text:
             try:
                 user_entity = await zedub.get_entity(user)
                 if user_entity.bot or user_entity.deleted:
                     continue
-                await zedub.send_message(user_entity.id, letonn, link_preview=False)
+                await zedub.send_message(user_entity.id, zilzal, link_preview=False)
                 success += 1
             except UserAdminInvalidError:
                 pass
             except Exception as e:
                 zzz.edit(f"خطأ في إرسال الرسالة إلى {user_entity.id}: {str(e)}")
-        elif letonn.media:
+        elif zilzal.media:
             try:
                 user_entity = await zedub.get_entity(user)
                 if user_entity.bot or user_entity.deleted:
                     continue
-                await zedub.send_file(user_entity.id, letonn.media, caption=letonn.text)
+                await zedub.send_file(user_entity.id, zilzal.media, caption=zilzal.text)
                 success += 1
             except UserAdminInvalidError:
                 pass
