@@ -349,7 +349,7 @@ async def malath(event):
         total += 1
         if zilzal.text:
             try:
-                user_entity = await zedub.get_entity(user))
+                user_entity = await zedub.get_entity(user)
                 if user_entity.bot or user_entity.deleted:
                     continue
                 await zedub.send_message(user_entity.id, zilzal, link_preview=False)
