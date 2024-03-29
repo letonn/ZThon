@@ -357,7 +357,7 @@ async def malath(event):
             except UserAdminInvalidError:
                 pass
             except Exception as e:
-                zzz.edit(f"خطأ في إرسال الرسالة إلى {user_entity.id}: {str(e)}")
+               zzz.edit(f"خطأ في إرسال الرسالة إلى {user_entity.id}: {str(e)}")
         elif zilzal.media:
             try:
                 user_entity = await zedub.get_entity(user)
