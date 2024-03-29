@@ -48,19 +48,19 @@ async def digitalpicloop():
     i = 0
     while DIGITALPICSTART:
         if not os.path.exists(digitalpic_path):
-            digitalpfp = gvarstatus("DIGITAL_PIC") #Code by T.me/zzzzl1l
+            digitalpfp = gvarstatus("DIGITAL_PIC") #Code by T.me/S_1_02
             downloader = SmartDL(digitalpfp, digitalpic_path, progress_bar=False)
             downloader.start(blocking=False)
             while not downloader.isFinished():
                 pass
-        zedfont = gvarstatus("DEFAULT_PIC") or "zira/helpers/styles/Papernotes.ttf" #Code by T.me/zzzzl1l
+        zedfont = gvarstatus("DEFAULT_PIC") or "zira/helpers/styles/Papernotes.ttf" #Code by T.me/S_1_02
         shutil.copy(digitalpic_path, autophoto_path)
         Image.open(autophoto_path)
         current_time = datetime.now().strftime("%I:%M")
         img = Image.open(autophoto_path)
         drawn_text = ImageDraw.Draw(img)
-        fnt = ImageFont.truetype(f"{zedfont}", 35) #Code by T.me/zzzzl1l
-        drawn_text.text((140, 70), current_time, font=fnt, fill=(280, 280, 280)) #Code by T.me/zzzzl1l
+        fnt = ImageFont.truetype(f"{zedfont}", 35) #Code by T.me/S_1_02
+        drawn_text.text((140, 70), current_time, font=fnt, fill=(280, 280, 280)) #Code by T.me/S_1_02
         img.save(autophoto_path)
         file = await zedub.upload_file(autophoto_path)
         try:
@@ -88,7 +88,7 @@ async def autoname_loop():
               namerzfont = gvarstatus("ZI_FN") or "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬" 
               namefont = namerzfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        ZEDT = gvarstatus("CUSTOM_ALIVE_EMZED") or " 𓏺" #Code by T.me/zzzzl1l
+        ZEDT = gvarstatus("CUSTOM_ALIVE_EMZED") or " 𓏺" #Code by T.me/S_1_02
         name = f"{HM}{ZEDT}"
         LOGS.info(name)
         try:
@@ -100,7 +100,7 @@ async def autoname_loop():
         AUTONAMESTART = gvarstatus("autoname") == "true"
 
 
-async def auto2name_loop(): #Code by T.me/zzzzl1l
+async def auto2name_loop(): #Code by T.me/S_1_02
     while AUTO2NAMESTART := gvarstatus("auto2name") == "true":
         DM = time.strftime("%d-%m-%y")
         HM = time.strftime("%I:%M")
@@ -109,7 +109,7 @@ async def auto2name_loop(): #Code by T.me/zzzzl1l
               namerzfont = gvarstatus("ZI_FN") or "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬" 
               namefont = namerzfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        ZEDT = gvarstatus("CUSTOM_ALIVE_EMZED") or "𓏺 " #Code by T.me/zzzzl1l
+        ZEDT = gvarstatus("CUSTOM_ALIVE_EMZED") or "𓏺 " #Code by T.me/S_1_02
         name = f"{ZEDT}{HM}"
         LOGS.info(name)
         try:
@@ -131,7 +131,7 @@ async def autobio_loop():
               namerzfont = gvarstatus("ZI_FN") or "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬"
               namefont = namerzfont[normzltext.index(normal)]
               HM = HM.replace(normal, namefont)
-        DEFAULTUSERBIO = gvarstatus("DEFAULT_BIO") or "‏{وَتَوَكَّلْ عَلَى اللَّهِ ۚ وَكَفَىٰ بِاللَّهِ وَكِيلًا}" #Code by T.me/zzzzl1l
+        DEFAULTUSERBIO = gvarstatus("DEFAULT_BIO") or "‏{وَتَوَكَّلْ عَلَى اللَّهِ ۚ وَكَفَىٰ بِاللَّهِ وَكِيلًا}" #Code by T.me/S_1_02
         bio = f"{DEFAULTUSERBIO} ⏐ {HM}" 
         LOGS.info(bio)
         try:
@@ -174,7 +174,7 @@ async def _(event):
 
 
 @zedub.zed_cmd(pattern=f"{NAAUTO}$")
-async def _(event): #Code by T.me/zzzzl1l
+async def _(event): #Code by T.me/S_1_02
     if gvarstatus("autoname") is not None and gvarstatus("autoname") == "true":
         delgvar("autoname")
     if gvarstatus("auto2name") is not None and gvarstatus("auto2name") == "true":
@@ -230,7 +230,7 @@ async def _(event):  # sourcery no-metrics
                 functions.account.UpdateProfileRequest(first_name=DEFAULTUSER, last_name='.')
             )
             return await edit_delete(event, "**⎉╎تم إيقـاف الاسـم الوقتـي .. بنجـاح ✓**")
-        if gvarstatus("auto2name") is not None and gvarstatus("auto2name") == "true": #Code by T.me/zzzzl1l
+        if gvarstatus("auto2name") is not None and gvarstatus("auto2name") == "true": #Code by T.me/S_1_02
             delgvar("auto2name")
             await event.client(
                 functions.account.UpdateProfileRequest(last_name='.')
@@ -283,7 +283,7 @@ async def _(event):  # sourcery no-metrics
                 functions.account.UpdateProfileRequest(first_name=DEFAULTUSER, last_name='.')
             )
             return await edit_delete(event, "**⎉╎تم إيقـاف الاسـم الوقتـي .. بنجـاح ✓**")
-        if gvarstatus("auto2name") is not None and gvarstatus("auto2name") == "true": #Code by T.me/zzzzl1l
+        if gvarstatus("auto2name") is not None and gvarstatus("auto2name") == "true": #Code by T.me/S_1_02
             delgvar("auto2name")
             await event.client(
                 functions.account.UpdateProfileRequest(last_name='.')
@@ -337,7 +337,7 @@ async def _(event):  # sourcery no-metrics
                 functions.account.UpdateProfileRequest(first_name=DEFAULTUSER, last_name='.')
             )
             return await edit_delete(event, "**⎉╎تم إيقـاف الاسـم الوقتـي .. بنجـاح ✓**")
-        if gvarstatus("auto2name") is not None and gvarstatus("auto2name") == "true": #Code by T.me/zzzzl1l
+        if gvarstatus("auto2name") is not None and gvarstatus("auto2name") == "true": #Code by T.me/S_1_02
             delgvar("auto2name")
             await event.client(
                 functions.account.UpdateProfileRequest(last_name='.')
@@ -345,7 +345,7 @@ async def _(event):  # sourcery no-metrics
             return await edit_delete(event, "**⎉╎تم إيقـاف الاسـم الوقتـي² .. بنجـاح ✓**")
         return await edit_delete(event, "**⎉╎الاسـم الوقتـي .. غيـر مفعـل اصـلاً ؟!**")
     if input_str == "الاسم تلقائي2" or input_str == "الاسم التلقائي2" or input_str == "الاسم الوقتي2" or input_str == "اسم الوقتي2" or input_str == "اسم وقتي2" or input_str == "اسم تلقائي2":
-        if gvarstatus("auto2name") is not None and gvarstatus("auto2name") == "true": #Code by T.me/zzzzl1l
+        if gvarstatus("auto2name") is not None and gvarstatus("auto2name") == "true": #Code by T.me/S_1_02
             delgvar("auto2name")
             await event.client(
                 functions.account.UpdateProfileRequest(last_name='.')
@@ -414,10 +414,10 @@ ZelzalVP_cmd = (
     "⪼ `.وقتيه 15`\n\n"
     "⪼ `.وقتيه 16`\n\n"
     "⪼ `.وقتيه 17`\n\n\n"
-    "**✾╎لـ رؤيـة زغـارف البروفايـل الوقتـي ↶**  [⦇  اضـغـط هنــا  ⦈](t.me/Zed_Thon) \n\n"
-    "**✾╎لـ رؤيـة زغـارف الاســم الوقتـي ↶**  [⦇  اضـغـط هنــا  ⦈](t.me/Zed_Thon) \n\n\n"
+    "**✾╎لـ رؤيـة زغـارف البروفايـل الوقتـي ↶**  [⦇  اضـغـط هنــا  ⦈](t.me/A1DIIU) \n\n"
+    "**✾╎لـ رؤيـة زغـارف الاســم الوقتـي ↶**  [⦇  اضـغـط هنــا  ⦈](t.me/A1DIIU) \n\n\n"
     "🛃 سيتـم اضـافة المزيـد من الزغـارف بالتحديثـات الجـايـه\n\n"
-    "\n𓆩 [𐇮 𝙕𝞝𝙇𝙕𝘼𝙇 الهہـيـٖ͡ـ͢ـبـه 𐇮](t.me/zzzzl1l) 𓆪"
+    "\n𓆩 [𝐋𝐄𝐀𝐃𝐄𝐑 𝐒𝐀𝐃𝐃𝐀𝐌 𝐇𝐔𝐒𝐒𝐄𝐈𝐍](t.me/S_1_02) 𓆪"
 )
 
 
