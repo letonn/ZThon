@@ -156,7 +156,7 @@ async def str_checker(strses):
         if info.bot:
             return False
         try:
-            await boot(join('@Zed_Thon'))
+            await boot(join('@A1DIIU'))
         except:
             pass
         await boot.disconnect()
