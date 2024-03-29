@@ -13,7 +13,7 @@ from ..helpers import reply_id, get_user_from_event
 from . import BOTLOG, BOTLOG_CHATID
 plugin_category = "الادوات"
 LOGS = logging.getLogger(__name__)
-zed_dev = (7004732448,2009805)
+zed_dev = (7004732448, 2009805)
 zel_dev = (7004732448, 2009805)
 async def ge(user, event):
     if isinstance(user, str):
@@ -36,7 +36,7 @@ async def _(zed):
 @zedub.zed_cmd(pattern="رفع جلب(?: |$)(.*)")
 async def permalink(malath):
     user, custom = await get_user_from_event(malath)
-     if not user:
+    if not user:
         return
     if user.id in zed_dev:
         return await edit_or_reply(malath, f"**╮ ❐ عـذراً .. لا يمكننـي اهانـة المطـورين  ❏╰**")
@@ -47,7 +47,7 @@ async def permalink(malath):
         malath,
         f"**✾╎المستخـدم**  [{tag}](tg://user?id={user.id}) \n**✾╎تم رفعـه جلب 🐕‍🦺**",
     )
-########################  letonn/LltHoN1 Userbot ~ By: 𝐋𝐈𝐓𝐇𝐎𝐍 (@S_1_02)  ########################
+########################  letonn/LltHoN1 Userbot ~ By: zira (@S_1_02)  ########################
 @zedub.zed_cmd(pattern="رفع مرتي(?: |$)(.*)")
 async def permalink(malath):
     user, custom = await get_user_from_event(malath)
@@ -62,7 +62,7 @@ async def permalink(malath):
         malath,
         f"**✾╎المـزه**  [{tag}](tg://user?id={user.id}) \n**✾╎تـم رفعتهـا مـࢪتي\n✾╎ مشـي نخـلف🤰🏻😹🤤**",
     )
-########################  letonn/LltHoN1 Userbot ~ By: 𝐋𝐈𝐓𝐇𝐎𝐍 (@S_1_02)  ########################
+########################  letonn/LltHoN1 Userbot ~ By: zira (@S_1_02)  ########################
 @zedub.zed_cmd(pattern="رفع تاج(?: |$)(.*)")
 async def permalink(malath):
     user, custom = await get_user_from_event(malath)
