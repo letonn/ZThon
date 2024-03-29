@@ -108,7 +108,7 @@ async def variable(event):
     reply = await event.get_reply_message()
     
     if reply and reply.text:
-        vinfo = reply.text:
+        vinfo = reply.text
         zed = await edit_or_reply(event, "⎉╎جـاري اضـافة الفـار الـى بـوتك ...")
 
     if input_str == "كليشة الفحص" or input_str == "كليشه الفحص":
