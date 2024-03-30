@@ -533,7 +533,7 @@ async def _(event): # Code by t.me/zzzzl1l
             open(i, 'a').write(f"{counter}• {links}\n")
     link = open(i, 'r').read()
     if not link:
-        await event.edit("**- لا توجد نتائج في البحث**")
+        return await edit_delete(event,"**- لا توجد نتائج في البحث**")
     else:
         await event.edit(f'''
 ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝐋𝐈𝐓𝐇𝐎𝐍 - **بـحـث تيليـجـࢪام**
