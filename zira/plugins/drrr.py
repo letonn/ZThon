@@ -535,7 +535,7 @@ async def _(event): # Code by t.me/zzzzl1l
     if not link:
         return await edit_delete(event,"**- لا توجد نتائج في البحث**")
     else:
-        await event.edit(f'''
+        return await edit_delete(event, "
 ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝐋𝐈𝐓𝐇𝐎𝐍 - **بـحـث تيليـجـࢪام**
 ⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆
 l {search} l  **🔎 نتائـج البحث عـن -**
