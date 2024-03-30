@@ -554,7 +554,7 @@ l قنوات + مجموعات l **يشمـل -**
 # =========================================================== #
 # Copyright (C) 2023 LltHoN . All Rights Reserved
 @zedub.zed_cmd(pattern="كلمه (.*)")
-async def _(event): # Code by t.me/zzzzl1l
+async def _(event):
     search_word = event.pattern_match.group(1)
     chat = await event.get_chat()
     chat_name = chat.title
@@ -571,7 +571,7 @@ async def _(event): # Code by t.me/zzzzl1l
     if not link:
         await event.edit("**- لا توجد نتائج في البحث**")
     else:
-        await event.edit(f"**ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝐋𝐈𝐓𝐇𝐎𝐍 - بـحـث تيليـجـࢪام \n ⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆ \n l {search_word} l  نتائـج البحث عـن - \n l {chat_name} l  فـي المجموعـة - \n {link}**")
+         await event.edit(f"**ᯓ 𝗦𝗢𝗨𝗥𝗖𝗘 𝐋𝐈𝐓𝐇𝐎𝐍 - بـحـث تيليـجـࢪام \n ⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆ \n l {search_word} l  نتائـج البحث عـن - \n l {chat_name} l  فـي المجموعـة - \n {link}**")
 
 Z = (
     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n"
