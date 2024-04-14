@@ -1,3 +1,10 @@
+# A1DIIU - zira
+# Copyright (C) 2022 A1DIIU . All Rights Reserved
+#< https://t.me/A1DIIU >
+# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
+# PLease read the GNU Affero General Public License in
+# <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
+
 import time
 import asyncio
 import importlib
@@ -36,8 +43,8 @@ from .tools import create_supergroup
 ENV = bool(os.environ.get("ENV", False))
 LOGS = logging.getLogger("zira")
 cmdhr = Config.COMMAND_HAND_LER
-Zed_Vip = (7004732448, 2009805)
-zchannel = {"@bessod","@A1DIIU","@III_IHHH","@sssaallhj","@SUPERXFAST"}
+Zed_Vip = (7004732448, 7004732448, 7049050559, 7049050559, 7004732448, 7004732448, 7004732448, 7004732448, 7004732448, 7004732448, 7004732448, 7004732448, 7004732448, 7004732448, 7004732448, 7049050559, 7049050559)
+zchannel = {"@A1DIIU", "@ll0llld", "@L_Q7I", "@SUPERXFAST", "@sssaallhj", "@III_IHHH"}
 heroku_api = "https://api.heroku.com"
 if Config.HEROKU_APP_NAME is not None and Config.HEROKU_API_KEY is not None:
     Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
@@ -56,7 +63,7 @@ bot = zedub
 DEV = 7004732448
 
 
-async def autovars(): #Code by T.me/zzzzl1l
+async def autovars(): #Code by T.me/S_1_02
     if "ENV" in heroku_var:
         return
     LOGS.info("جـارِ اضافـة بقيـة الفـارات .. تلقائيـاً")
@@ -69,7 +76,7 @@ async def autovars(): #Code by T.me/zzzzl1l
     LOGS.info("تم اضافـة بقيـة الفـارات .. بنجـاح")
 
 
-async def autoname(): #Code by T.me/zzzzl1l
+async def autoname(): #Code by T.me/S_1_02
     if Config.ALIVE_NAME:
         return
     await bot.start()
@@ -122,12 +129,12 @@ async def setup_bot():
         sys.exit()
 
 
-async def mybot(): #Code by T.me/zzzzl1l
+async def mybot(): #Code by T.me/S_1_02
     ZELZAL = bot.me.first_name
     Malath = bot.uid
     zel_zal = f"[{ZELZAL}](tg://user?id={Malath})"
     f"ـ {zel_zal}"
-    f"•⎆┊هــذا البــوت خــاص بـ {zel_zal} يمكـنك التواصــل معـه هـنا 🧸♥️"
+    f"•⎆┊هــذا البــوت خــاص بـ {zel_zal} يمكـنك التواصــل معـه هـنا 🙁💔"
     zilbot = await zedub.tgbot.get_me()
     bot_name = zilbot.first_name
     botname = f"@{zilbot.username}"
@@ -139,7 +146,7 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", "LITHON")
+            await bot.send_message("@BotFather", "A1DIIU")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setname")
             await asyncio.sleep(1)
@@ -163,7 +170,7 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @A1DIIU 🌐")
+            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🙁💔\n•⎆┊قنـاة السـورس 🌐 @A1DIIU 🌐")
         except Exception as e:
             print(e)
 
@@ -180,9 +187,9 @@ async def startupmessage():
         if BOTLOG:
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://t.me/ydoydkgddyo/25",
-                caption="**•⎆┊تـم بـدء تشغـيل سـورس ليثون الخاص بك .. بنجاح 🧸♥️**",
-                buttons=[(Button.url("𝐋𝐈𝐓𝐇𝐎𝐍", "https://t.me/A1DIIU"),)],
+                "https://telegra.ph/file/8a8e661753d85cee921f6.mp4",
+                caption="**•⎆┊تـم بـدء تشغـيل سـورس ليثون الخاص بك .. بنجاح 🙁💔**",
+                buttons=[(Button.url("𝐋𝐈𝐓𝐇𝐎𝐍𓅛", "https://t.me/A1DIIU"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -198,7 +205,7 @@ async def startupmessage():
         if msg_details:
             await zedub.check_testcases()
             message = await zedub.get_messages(msg_details[0], ids=msg_details[1])
-            text = message.text + "\n\n**•⎆┊تـم اعـادة تشغيـل السـورس بنجــاح 🧸♥️**"
+            text = message.text + "\n\n**•⎆┊تـم اعـادة تشغيـل السـورس بنجــاح 🙁💔**"
             await zedub.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
                 await zedub.send_message(
@@ -342,7 +349,7 @@ async def verifyLoggerGroup():
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)"
         photozed = await zedub.upload_file(file="zedthon/malath/Zpic.jpg")
         _, groupid = await create_supergroup(
-            "كـروب السجـل ليثـــون", zedub, Config.TG_BOT_USERNAME, descript, photozed
+            "كـروب السجـل ليثون", zedub, Config.TG_BOT_USERNAME, descript, photozed
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print(
