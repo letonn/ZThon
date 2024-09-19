@@ -66,13 +66,13 @@ class Config(object):
         or 0
     )
 
-    #فارات ليثون
+    #فارات زدثــون
     CUSTOM_ALIVE_TEXT = os.environ.get("CUSTOM_ALIVE_TEXT", None)
     CUSTOM_ALIVE_EMOJI = os.environ.get("CUSTOM_ALIVE_EMOJI", None)
     CUSTOM_ALIVE_EMZED = os.environ.get("CUSTOM_ALIVE_EMZED", None)
     CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
     ZELZAL_Z = int(1338009605)
-    ZELZAL_A = int(os.environ.get("ZELZAL_A") or -1001338009605)
+    ZELZAL_A = int(os.environ.get("ZELZAL_A") or -1002051286023)
     ALIVE_PIC = os.environ.get("ALIVE_PIC", None)
     BOT_PIC = os.environ.get("BOT_PIC", None)
     ZED_MEDIA = os.environ.get("ZED_MEDIA", None)
@@ -85,14 +85,14 @@ class Config(object):
     ZI_FN = os.environ.get("ZI_FN", "𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵𝟬")
     CUSTOM_PMPERMIT_TEXT = os.environ.get("CUSTOM_PMPERMIT_TEXT", None)
 
-    # Custom vars for 𝐋𝐈𝐓𝐇𝐎𝐍
+    # Custom vars for zthon
     # set this will channel id of your custom plugins
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL") or 0)
     # set this value with your required name for telegraph plugin
-    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "𝐋𝐈𝐓𝐇𝐎𝐍")
+    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "ZThon")
     # for custom thumb image set this with your required thumb telegraoh link
     THUMB_IMAGE = os.environ.get(
-        "THUMB_IMAGE", "https://telegra.ph/file/9f98c8826d9452a59ab49.jpg"
+        "THUMB_IMAGE", "https://telegra.ph/file/c91c09fb188f0f281e628.jpg"
     )
     # specify NO_LOAD with plugin names for not loading in userbot
     NO_LOAD = list(os.environ.get("NO_LOAD", "").split())
@@ -110,7 +110,7 @@ class Config(object):
     FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "▰")
     UNFINISHED_PROGRESS_STR = os.environ.get("UNFINISHED_PROGRESS_STR", "▱")
 
-    # API VARS FOR LITHON
+    # API VARS FOR ZTHON
     # Get your own ACCESS_KEY from http://api.screenshotlayer.com/api/capture for screen shot
     SCREEN_SHOT_LAYER_ACCESS_KEY = os.environ.get("SCREEN_SHOT_LAYER_ACCESS_KEY", None)
     # Get your own APPID from https://api.openweathermap.org/data/2.5/weather
@@ -138,7 +138,7 @@ class Config(object):
     # For transfer channel 2 step verification code of telegram
     TG_2STEP_VERIFICATION_CODE = os.environ.get("TG_2STEP_VERIFICATION_CODE", None)
     # JustWatch Country for watch plugin
-    WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY", "IN")
+    WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY", "IQ")
     # Last.fm plugin  https://telegra.ph/Guide-for-LASTFM-02-03
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
     LASTFM_API = os.environ.get("LASTFM_API", None)
@@ -179,7 +179,7 @@ class Config(object):
     COUNTRY = str(os.environ.get("COUNTRY", ""))
     TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
     # For updater plugin
-    UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "lite")
+    UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "zizi")
     # dont touch this at all
     SUDO_USERS: Set[int] = set()
     ZEDUBLOGO = None
@@ -187,11 +187,11 @@ class Config(object):
     BOTLOG_CHATID = 0
     # extra plugins realted vars below  4
     EXTERNAL_REPOBRANCH = os.environ.get("EXTERNAL_REPOBRANCH", "main")
-    OLDZED_REPO = os.environ.get("OLDZED_REPO", "https://github.com/Zed-Thon/ZED_USERBOT")
+    OLDZED_REPO = os.environ.get("OLDZED_REPO", "https://github.com/letonn/ZThon")
     if OLDZED_REPO and not url(OLDZED_REPO):
-        OLDZED_REPO = "https://github.com/Zed-Thon/ZED_USERBOT"
+        OLDZED_REPO = "https://github.com/letonn/ZThon"
     OLDZED_REPOBRANCH = os.environ.get("OLDZED_REPOBRANCH", "oldzed")
-    VC_REPO = os.environ.get("VC_REPO", "https://github.com/Zed-Thon/ZVCPlayer")
+    VC_REPO = os.environ.get("VC_REPO", "https://github.com/letonn/ZVCPlayer")
     VC_REPOBRANCH = os.environ.get("VC_REPOBRANCH", "zvcplayer")
 
 class Production(Config):
